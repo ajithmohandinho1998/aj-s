@@ -1,0 +1,13 @@
+.jumbotron{
+    background-color:chocolate;
+    font-family:stencil;
+    width:100%;
+    height:200px;
+    margin-bottom:50px
+}
+.banner-text{
+    left:48%;
+    top:6%;
+    position:absolute;
+    transform:transform;
+}
