@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+<form action="login"  method="post">
+    {% csrf_token %}
+
+    <input type="text" placeholder="username" name="userid"><br>
+    <input type="password" placeholder="password" name="password"><br>
+    <input type="submit">
+</form>
+{% for k in messages%}
+{{k}}
+{% endfor %}
+
+</body>
+</html>

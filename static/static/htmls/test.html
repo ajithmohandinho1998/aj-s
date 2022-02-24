@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJ's TEST</title>
+</head>
+<body>
+<p>FOR TESTING PURPOSE</p>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="uname" placeholder="USERNAME"><br>
+    <input type="text" name="fname" placeholder="FIRST NAME"><br>
+    <input type="text" name="lname" placeholder="LAST NAME"><br>
+    <input type="email" name="email" placeholder="MAIL ID"><br>
+    <input type="password" name="pwd" placeholder="PASSWORD"><br>
+    <input type="password" name="pwd1" placeholder="CONFIRM PASSWORD"><br>
+    <input type="submit">
+
+
+</form>
+{% for i in messages %}
+{{i}}
+{% endfor %}
+</body>
+</html>
